@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mélissa Encausse - Coach mental pour les solopreneurs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --turquoise-site: #2f8c94; }
+        body { font-family: 'Open Sans', sans-serif; color: #333; scroll-behavior: smooth; background-color: #f8fafc; overflow-x: hidden; }
+
+        /* Animation des connexions neuronales en arrière-plan */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, #ffffff 0%, #e2f1f2 100%);
+        }
+
+        /* Effet de verre dépoli pour les sections */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 24px;
+        }
+
+        /* Animation d'apparition au scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Bouton ultra-moderne */
+        .btn-modern {
+            background-color: var(--turquoise-site);
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 20px rgba(47, 140, 148, 0.3);
+        }
+        .btn-modern:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 15px 30px rgba(47, 140, 148, 0.4);
+        }
+
+        /* Titre avec dégradé */
+        .gradient-text {
+            background: linear-gradient(90deg, #2f8c94, #1a4d52);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="sticky top-0 z-50 bg-white/60 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-[#2f8c94] uppercase tracking-tighter">Mélissa Encausse</div>
+            <div class="hidden lg:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
+                <a href="#accueil" class="hover:text-[#2f8c94] transition">Accueil</a>
+                <a href="#accompagnements" class="hover:text-[#2f8c94] transition">Accompagnements</a>
+                <a href="quisuisje.html" class="hover:text-[#2f8c94] transition">Qui suis-je ?</a>
+                <a href="#temoignages" class="hover:text-[#2f8c94] transition">Témoignages</a>
+                <a href="contact.html" class="hover:text-[#2f8c94] transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="min-h-[90vh] flex items-center px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal active">
+                <div class="inline-block px-4 py-1 border border-[#2f8c94] text-[#2f8c94] rounded-full text-xs font-bold mb-6">COACHING MENTAL & NEUROSCIENCES</div>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    Deviens un solopreneur complet pour <br>
+                    <span class="gradient-text italic">vivre de ton activité en paix avec toi-même</span>
+                </h1>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    Développe et sécurise la stabilité financière de ton activité de cœur en 6 mois seulement, sans t'épuiser.
+                </p>
+                <a href="contact.html" class="btn-modern inline-block px-10 py-4 rounded-full font-bold">Réserver mon échange gratuit</a>
+            </div>
+            <div class="relative reveal active" style="transition-delay: 0.2s;">
+                <div class="glass-panel p-4 shadow-2xl">
+                    <div class="rounded-xl overflow-hidden bg-gray-200 aspect-square flex items-center justify-center italic text-gray-400">
+                        [Photo Mélissa Originale]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accompagnements" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 uppercase tracking-widest text-gray-400">Mes Accompagnements</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-10 reveal">
+                    <h3 class="text-2xl font-bold mb-4 text-[#2f8c94] italic">Coaching Neuro-Identitaire</h3>
+                    <p class="text-gray-600 mb-6 italic">"Investis sur toi, ton entreprise le mérite."</p>
+                    <p class="text-gray-700 mb-6">Un travail profond sur ta posture de chef d'entreprise et tes blocages internes.</p>
+                    <div class="h-1 w-12 bg-[#2f8c94] mb-6"></div>
+                    <ul class="space-y-3 text-sm font-semibold text-gray-500">
+                        <li>✔ 100% VISIO</li>
+                        <li>✔ ACCOMPAGNEMENT SUR MESURE</li>
+                        <li>✔ OUTILS CONCRETS</li>
+                    </ul>
+                </div>
+                <div class="glass-panel p-10 reveal" style="transition-delay: 0.2s;">
+                    <h3 class="text-2xl font-bold mb-4 text-[#2f8c94] italic">Hypnose Neuro-Émotionnelle</h3>
+                    <p class="text-gray-600 mb-6 italic">"Libère tes blocages vers ton épanouissement."</p>
+                    <p class="text-gray-700 mb-6">Reprogrammer ta manière de penser et d'agir pour vivre de ta passion.</p>
+                    <div class="h-1 w-12 bg-[#2f8c94] mb-6"></div>
+                    <ul class="space-y-3 text-sm font-semibold text-gray-500">
+                        <li>✔ TRANSFORMATION PROFONDE</li>
+                        <li>✔ RÉSULTATS TANGIBLES</li>
+                        <li>✔ APPROCHE SCIENTIFIQUE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-section" class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto glass-panel p-12 text-center reveal">
+            <h2 class="text-3xl font-bold mb-6 italic text-[#2f8c94]">Prêt(e) pour le changement ?</h2>
+            <p class="text-gray-600 mb-10 leading-relaxed">Ici, tu apprendras comment être profondément ancré, mentalement solide, émotionnellement lucide et stratégiquement aligné.</p>
+            <a href="contact.html" class="btn-modern inline-block px-12 py-5 rounded-full font-bold text-lg uppercase tracking-widest">Je réserve mon échange</a>
+            <div class="mt-16 pt-8 border-t border-gray-100 text-[10px] font-bold text-gray-400 flex justify-between uppercase">
+                <span>© 2025 MÉLISSA ENCAUSSE</span>
+                <span>Mentions légales | 1er contact gratuit</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        /* Initialisation des particules (Cerveau/Connexions) */
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#2f8c94" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.2, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#2f8c94", "opacity": 0.2, "width": 1 },
+                "move": { "enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" } },
+                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } } }
+            },
+            "retina_detect": true
+        });
+
+        /* Script d'apparition au scroll */
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mélissa Encausse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --turquoise-site: #2f8c94; }
+        body { font-family: 'Open Sans', sans-serif; color: #333; scroll-behavior: smooth; background-color: #f8fafc; overflow-x: hidden; }
+
+        /* Animation des connexions neuronales en arrière-plan */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, #ffffff 0%, #e2f1f2 100%);
+        }
+
+        /* Effet de verre dépoli pour les sections */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 24px;
+        }
+
+        /* Bouton ultra-moderne */
+        .btn-modern {
+            background-color: var(--turquoise-site);
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 20px rgba(47, 140, 148, 0.3);
+        }
+        .btn-modern:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 15px 30px rgba(47, 140, 148, 0.4);
+        }
+
+        /* Titre avec dégradé */
+        .gradient-text {
+            background: linear-gradient(90deg, #2f8c94, #1a4d52);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Style pour les champs de formulaire */
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(209, 213, 219, 0.5);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--turquoise-site);
+            box-shadow: 0 0 0 3px rgba(47, 140, 148, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="sticky top-0 z-50 bg-white/60 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-[#2f8c94] uppercase tracking-tighter">Mélissa Encausse</a>
+            <div class="hidden lg:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
+                <a href="index.html#accueil" class="hover:text-[#2f8c94] transition">Accueil</a>
+                <a href="index.html#accompagnements" class="hover:text-[#2f8c94] transition">Accompagnements</a>
+                <a href="quisuisje.html" class="hover:text-[#2f8c94] transition">Qui suis-je ?</a>
+                <a href="index.html#temoignages" class="hover:text-[#2f8c94] transition">Témoignages</a>
+                <a href="contact.html" class="text-[#2f8c94] transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact-form" class="py-24 px-6 flex items-center min-h-[80vh]">
+        <div class="max-w-3xl w-full mx-auto">
+            <div class="glass-panel p-8 md:p-12 shadow-2xl">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-4">
+                    <span class="gradient-text italic">Entrons en contact</span>
+                </h1>
+                <p class="text-gray-600 mb-10 text-center leading-relaxed max-w-xl mx-auto">
+                    Remplissez le formulaire pour réserver votre échange gratuit. Je vous répondrai dans les plus brefs délais pour fixer un rendez-vous.
+                </p>
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-gray-500 mb-2 uppercase tracking-wider">Nom complet</label>
+                            <input type="text" id="name" name="name" required class="form-input">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-gray-500 mb-2 uppercase tracking-wider">Adresse e-mail</label>
+                            <input type="email" id="email" name="email" required class="form-input">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-bold text-gray-500 mb-2 uppercase tracking-wider">Sujet de votre message</label>
+                        <input type="text" id="subject" name="subject" required class="form-input">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-bold text-gray-500 mb-2 uppercase tracking-wider">Votre message</label>
+                        <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                    </div>
+                    <div class="text-center pt-4">
+                        <button type="submit" class="btn-modern inline-block px-12 py-4 rounded-full font-bold text-lg uppercase tracking-widest">
+                            Envoyer le message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 text-center">
+        <div class="text-[10px] font-bold text-gray-400 flex justify-center uppercase">
+            <span>© 2025 MÉLISSA ENCAUSSE</span>
+            <span class="mx-2">|</span>
+            <span>Mentions légales | 1er contact gratuit</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        /* Initialisation des particules (Cerveau/Connexions) */
+        particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#2f8c94" }, "shape": { "type": "circle" }, "opacity": { "value": 0.2, "random": false }, "size": { "value": 3, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#2f8c94", "opacity": 0.2, "width": 1 }, "move": { "enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false } }, "interactivity": { "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" } }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } } } }, "retina_detect": true });
+    </script>
+</body>
+</html>

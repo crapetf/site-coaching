@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui suis-je ? - Mélissa Encausse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --turquoise-site: #2f8c94; }
+        body { font-family: 'Open Sans', sans-serif; color: #333; scroll-behavior: smooth; background-color: #f8fafc; overflow-x: hidden; }
+
+        /* Animation des connexions neuronales en arrière-plan */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, #ffffff 0%, #e2f1f2 100%);
+        }
+
+        /* Effet de verre dépoli pour les sections */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 24px;
+        }
+
+        /* Bouton ultra-moderne */
+        .btn-modern {
+            background-color: var(--turquoise-site);
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 20px rgba(47, 140, 148, 0.3);
+        }
+        .btn-modern:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 15px 30px rgba(47, 140, 148, 0.4);
+        }
+
+        /* Titre avec dégradé */
+        .gradient-text {
+            background: linear-gradient(90deg, #2f8c94, #1a4d52);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="sticky top-0 z-50 bg-white/60 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-[#2f8c94] uppercase tracking-tighter">Mélissa Encausse</a>
+            <div class="hidden lg:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
+                <a href="index.html#accueil" class="hover:text-[#2f8c94] transition">Accueil</a>
+                <a href="index.html#accompagnements" class="hover:text-[#2f8c94] transition">Accompagnements</a>
+                <a href="quisuisje.html" class="text-[#2f8c94] transition">Qui suis-je ?</a>
+                <a href="index.html#temoignages" class="hover:text-[#2f8c94] transition">Témoignages</a>
+                <a href="contact.html" class="hover:text-[#2f8c94] transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="min-h-screen flex items-center py-24 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+            
+            <!-- Colonne Image (Design Polaroid/Cadre moderne) -->
+            <div class="relative sticky top-32">
+                <div class="glass-panel p-4 shadow-2xl transform -rotate-2 hover:rotate-0 transition duration-700 ease-out">
+                    <div class="aspect-[3/4] bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center text-gray-400 italic relative group">
+                        <!-- Placeholder pour l'image -->
+                        <span class="z-10 text-center px-4">📸 Collez votre photo ici<br>(Format portrait conseillé)</span>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-[#2f8c94]/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                    </div>
+                </div>
+                <!-- Élément décoratif arrière-plan -->
+                <div class="absolute -z-10 top-8 -left-8 w-full h-full border-2 border-[#2f8c94]/30 rounded-3xl"></div>
+            </div>
+
+            <!-- Colonne Texte (Design épuré) -->
+            <div class="glass-panel p-8 md:p-12 relative overflow-hidden">
+                <!-- Touche déco -->
+                <div class="absolute top-0 right-0 w-32 h-32 bg-[#2f8c94]/10 rounded-bl-full -mr-10 -mt-10"></div>
+
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Qui suis-je ?</span>
+                </h1>
+                <h2 class="text-xl font-semibold text-[#2f8c94] mb-8 uppercase tracking-wider">Coach Mental & Neurosciences</h2>
+                
+                <div class="prose prose-lg text-gray-600 leading-relaxed space-y-6 text-justify">
+                    <!-- Zone de texte à remplacer -->
+                    <p class="bg-yellow-50 border-l-4 border-yellow-400 p-4 text-yellow-800 text-sm font-bold rounded-r">
+                        ⚠️ ACTION REQUISE : Copiez et collez ici le texte de votre page "Qui suis-je".
+                    </p>
+                    <p>
+                        [Paragraphe 1 : Votre histoire, votre parcours...]
+                    </p>
+                    <p>
+                        [Paragraphe 2 : Votre mission auprès des solopreneurs...]
+                    </p>
+                    <p>
+                        [Paragraphe 3 : Votre approche unique (Neurosciences, Hypnose)...]
+                    </p>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-gray-100 text-center md:text-left">
+                    <a href="contact.html" class="btn-modern inline-block px-10 py-4 rounded-full font-bold">Réserver mon échange gratuit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 text-center">
+        <div class="text-[10px] font-bold text-gray-400 flex justify-center uppercase">
+            <span>© 2025 MÉLISSA ENCAUSSE</span>
+            <span class="mx-2">|</span>
+            <span>Mentions légales | 1er contact gratuit</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        /* Initialisation des particules (Cerveau/Connexions) */
+        particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#2f8c94" }, "shape": { "type": "circle" }, "opacity": { "value": 0.2, "random": false }, "size": { "value": 3, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#2f8c94", "opacity": 0.2, "width": 1 }, "move": { "enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false } }, "interactivity": { "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" } }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } } } }, "retina_detect": true });
+    </script>
+</body>
+</html>
